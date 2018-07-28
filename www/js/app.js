@@ -25,6 +25,7 @@ angular.module('starter', ['ionic'])
 
 .config(function($stateProvider, $urlRouterProvider){
   $urlRouterProvider.otherwise('/')
+
   $stateProvider
   
   .state('home',{
@@ -39,9 +40,28 @@ angular.module('starter', ['ionic'])
   .state('help',{
     url: '/help',
     views: {
-      home: {
+      help: {
        templateUrl: 'views/help.html'
         }
        }
     })
+
+    .state('lista',{
+      url: '/lista',
+      views: {
+        lista: {
+         templateUrl: 'views/lista.html',
+          controller: 'listaCtrl'
+          }
+         }
+      });
+})
+
+.controller('listaCtrl', function($scope){
+  $scope.lista = [
+    {title: "Take out the trash", done: true},
+    {title: "Do laundry", done: false},
+    {title: "Start cooking dinner", done: false}
+  ]
+
 })

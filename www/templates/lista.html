@@ -4,8 +4,17 @@
        <ion-list>
            <ion-item ng-repeat="item in lista" ng-class="{done: item.done}"
            ng-click="item.done=true">
-            {{item.title}}            
-        </ion-item>
+           
+            {{item.title}}
+     </ion-item>
+        
+     <a class="item item-avatar" href="#">
+        <img src="https://png.icons8.com/ios/1600/add.png">
+       
+        <p>Add Atividade</p>
+      </a>
+         
+
        </ion-list>
     </ion-content>
     </ion-view>

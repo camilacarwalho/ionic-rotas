@@ -32,16 +32,16 @@ angular.module('starter', ['ionic'])
   url: '/home',
   views: {
     home: {
-     templateUrl: 'views/home.html'
+     templateUrl: 'templates/home.html'
       }
      }
   })
 
-  .state('help',{
-    url: '/help',
+  .state('talk',{
+    url: '/talk',
     views: {
-      help: {
-       templateUrl: 'views/help.html'
+      talk: {
+       templateUrl: 'templates/talk.html'
         }
        }
     })
@@ -50,7 +50,7 @@ angular.module('starter', ['ionic'])
       url: '/lista',
       views: {
         lista: {
-         templateUrl: 'views/lista.html',
+         templateUrl: 'templates/lista.html',
           controller: 'listaCtrl'
           }
          }
@@ -59,9 +59,11 @@ angular.module('starter', ['ionic'])
 
 .controller('listaCtrl', function($scope){
   $scope.lista = [
-    {title: "Take out the trash", done: true},
-    {title: "Do laundry", done: false},
-    {title: "Start cooking dinner", done: false}
+    {title: "Prova - Metodologia", done: true},
+    {title: "Prova - Banco de Dados", done: false},
+    {title: "Fase 1 - Projeto POO", done: false},
+    {title: "Fase 1 - Projeto BD", done: true},
+    {title: "Seminário - PDS", done: false},
   ]
 
 })

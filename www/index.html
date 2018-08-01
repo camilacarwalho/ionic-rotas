@@ -34,16 +34,17 @@
   </head>
   <body ng-app="starter">
 
-    <ion-nav-bar class="bar-calm"></ion-nav-bar>
+    <ion-nav-bar class="bar-dark"></ion-nav-bar>
 
-    <ion-tabs class="tabs-calm">
+    <ion-tabs class="tabs-dark">
 
+   
+    
+    <ion-tab icon="ion-chatbubbles" ui-sref="talk">
+      <ion-nav-view name="talk"></ion-nav-view>
+    </ion-tab>
     <ion-tab icon="ion-home" ui-sref="home">
       <ion-nav-view name="home"></ion-nav-view>
-    </ion-tab>
-    
-    <ion-tab icon="ion-help" ui-sref="help">
-      <ion-nav-view name="help"></ion-nav-view>
     </ion-tab>
 
     <ion-tab icon="ion-checkmark" ui-sref="lista">
